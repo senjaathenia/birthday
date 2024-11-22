@@ -10,10 +10,9 @@
     <!-- Main Container -->
     <div class="container" id="mainContainer">
         <!-- Title -->
-         
         <h1 id="title" class="animate-title">Golden Year!✨</h1>
 
-        
+        <!-- Canvas for Confetti -->
         <canvas id="confettiCanvas"></canvas>
         
         <!-- Cake -->
@@ -40,7 +39,6 @@
                 <circle cx="122.5" cy="60" r="5" fill="#FF6347" class="flame" style="animation-delay: 0.6s;" />
             </svg>
         </div>
-        
 
         <!-- Wish Button -->
         <button id="showWish" class="fancy-button">໒꒰ྀིᵔ ᵕ ᵔ ꒱ྀི১</button>
@@ -48,7 +46,6 @@
 
     <!-- Balloons Background -->
     <div class="balloons" id="balloons">
-        <!-- Balon akan di-generate otomatis oleh CSS -->
         <div class="balloon brown-light" style="left: 10%; animation-delay: 0s;"></div>
         <div class="balloon brown-dark" style="left: 20%; animation-delay: 1s;"></div>
         <div class="balloon brown-light" style="left: 30%; animation-delay: 2s;"></div>
@@ -59,17 +56,15 @@
         <div class="balloon brown-dark" style="left: 80%; animation-delay: 0.8s;"></div>
     </div>
     
-
     <!-- Wish Section -->
-      <div class="wish-section" id="wishSection" style="display: none;">
+    <div class="wish-section" id="wishSection" style="display: none;">
         <!-- Paper -->
         <div class="paper-container">
             <div class="paper animate-paper animate-floating-paper">
                 <p class="wish-text">Another year, another chance to shine even brighter. Wishing you good vibes, endless fun, and dreams that turn into reality. May this year bring more laughs, more wins, and memories worth keeping forever.
 
                     Stay awesome, keep slaying, and don’t forget—you’re the main character today. Cheers to you and your unstoppable journey ahead! 🥳✨
-                    
-                    </p>
+                </p>
             </div>
         </div>
     
@@ -84,16 +79,16 @@
                 <p>In Every Universe</p>
             </div>
             <div class="polaroid animate-polaroid animate-floating-polaroid">
-                <img src="img/photo2.jpg    " alt="Photo 3">
+                <img src="img/photo2.jpg" alt="Photo 3">
                 <p>⸜(｡˃ ᵕ ˂)⸝♡</p>
             </div>
         </div>
-    
 
         <!-- Back Button -->
         <button id="backButton" class="fancy-button">Back</button>
     </div>
 
+    <!-- Audio -->
     <audio id="birthdaySong" src="music/happy-birthday.mp3" autoplay loop></audio>
 
     <script src="script.js"></script>
