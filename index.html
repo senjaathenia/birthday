@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container" id="mainContainer">
+        <!-- Title -->
+         
+        <h1 id="title" class="animate-title">Golden Year!✨</h1>
+
+        
+        <canvas id="confettiCanvas"></canvas>
+        
+        <!-- Cake -->
+        <div class="cake" id="cake">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" class="cake-svg animate-cake">
+                <!-- Plate -->
+                <ellipse cx="100" cy="280" rx="80" ry="20" fill="#D8BFAA" />
+                <!-- Base Layer -->
+                <rect x="40" y="210" width="120" height="70" fill="#C69F7E" rx="15" />
+                <path d="M40,250 Q100,270 160,250" fill="#A67B5B" />
+                <!-- Middle Layer -->
+                <rect x="50" y="150" width="100" height="60" fill="#D9C3A5" rx="15" />
+                <path d="M50,180 Q100,200 150,180" fill="#B89068" />
+                <!-- Top Layer -->
+                <rect x="60" y="100" width="80" height="50" fill="#C69F7E" rx="15" />
+                <path d="M60,120 Q100,140 140,120" fill="#A67B5B" />
+                <!-- Candles -->
+                <rect x="80" y="70" width="5" height="30" fill="#FFD700" />
+                <rect x="100" y="70" width="5" height="30" fill="#FFD700" />
+                <rect x="120" y="70" width="5" height="30" fill="#FFD700" />
+                <!-- Flames -->
+                <circle cx="82.5" cy="60" r="5" fill="#FF6347" class="flame" style="animation-delay: 0.2s;" />
+                <circle cx="102.5" cy="60" r="5" fill="#FF6347" class="flame" style="animation-delay: 0.4s;" />
+                <circle cx="122.5" cy="60" r="5" fill="#FF6347" class="flame" style="animation-delay: 0.6s;" />
+            </svg>
+        </div>
+        
+
+        <!-- Wish Button -->
+        <button id="showWish" class="fancy-button">໒꒰ྀིᵔ ᵕ ᵔ ꒱ྀི১</button>
+    </div>
+
+    <!-- Balloons Background -->
+    <div class="balloons" id="balloons">
+        <!-- Balon akan di-generate otomatis oleh CSS -->
+        <div class="balloon brown-light" style="left: 10%; animation-delay: 0s;"></div>
+        <div class="balloon brown-dark" style="left: 20%; animation-delay: 1s;"></div>
+        <div class="balloon brown-light" style="left: 30%; animation-delay: 2s;"></div>
+        <div class="balloon brown-dark" style="left: 40%; animation-delay: 0.5s;"></div>
+        <div class="balloon brown-light" style="left: 50%; animation-delay: 1.5s;"></div>
+        <div class="balloon brown-dark" style="left: 60%; animation-delay: 0.2s;"></div>
+        <div class="balloon brown-light" style="left: 70%; animation-delay: 1.2s;"></div>
+        <div class="balloon brown-dark" style="left: 80%; animation-delay: 0.8s;"></div>
+    </div>
+    
+
+    <!-- Wish Section -->
+      <div class="wish-section" id="wishSection" style="display: none;">
+        <!-- Paper -->
+        <div class="paper-container">
+            <div class="paper animate-paper animate-floating-paper">
+                <p class="wish-text">Another year, another chance to shine even brighter. Wishing you good vibes, endless fun, and dreams that turn into reality. May this year bring more laughs, more wins, and memories worth keeping forever.
+
+                    Stay awesome, keep slaying, and don’t forget—you’re the main character today. Cheers to you and your unstoppable journey ahead! 🥳✨
+                    
+                    </p>
+            </div>
+        </div>
+    
+        <!-- Polaroid Gallery -->
+        <div class="polaroid-gallery">
+            <div class="polaroid animate-polaroid animate-floating-polaroid">
+                <img src="img/photo1.jpg" alt="Photo 1">
+                <p>I Love You</p>
+            </div>
+            <div class="polaroid animate-polaroid animate-floating-polaroid">
+                <img src="img/photo3.jpg" alt="Photo 2">
+                <p>In Every Universe</p>
+            </div>
+            <div class="polaroid animate-polaroid animate-floating-polaroid">
+                <img src="img/photo2.jpg    " alt="Photo 3">
+                <p>⸜(｡˃ ᵕ ˂)⸝♡</p>
+            </div>
+        </div>
+    
+
+        <!-- Back Button -->
+        <button id="backButton" class="fancy-button">Back</button>
+    </div>
+
+    <audio id="birthdaySong" src="music/happy-birthday.mp3" autoplay loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
