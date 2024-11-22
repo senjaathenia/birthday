@@ -172,7 +172,7 @@ h1 {
     }
 }
 
-/* Re
+/* Responsive Styles */
 
 /* Warna Balon */
 .brown-light {
@@ -341,6 +341,7 @@ h1 {
         height: 10vw;
     }
 }
+
 @media (max-width: 768px) {
     .paper-container {
         max-width: 95vw;
