@@ -84,16 +84,22 @@ h1 {
 }
 
 /* Paper Styling */
+/* Paper Styling */
 .paper-container {
     display: flex;
+    flex-direction: column; /* Atur elemen dalam kolom */
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    width: 100%; /* Pastikan mengambil penuh */
+    max-width: 90vw; /* Batasi lebar maksimal */
+    padding: 10px;
 }
 
 .paper {
     position: relative;
-    width: 350px;
+    width: 80%; /* Responsif dengan lebar layar */
+    max-width: 400px; /* Batasi lebar maksimal */
     padding: 30px;
     background: linear-gradient(135deg, #fef6e4, #f7e4c4); /* Kertas dengan nuansa kuning vintage */
     border: 2px solid #d9b894; /* Warna coklat emas */
@@ -101,6 +107,7 @@ h1 {
     border-radius: 12px;
     transform: rotate(-1deg);
     animation: slideInSmooth 1.5s ease-out forwards;
+    text-align: center; /* Teks pada kertas tetap rata tengah */
 }
 
 @keyframes slideInSmooth {
@@ -118,13 +125,15 @@ h1 {
 .polaroid-gallery {
     display: flex;
     justify-content: center;
-    gap: 30px;
     flex-wrap: wrap;
+    gap: 20px; /* Jarak antar polaroid */
     margin-top: 20px;
+    width: 100%; /* Pastikan elemen di tengah */
 }
 
 .polaroid {
-    width: 180px;
+    width: 100px; /* Ukuran awal kecil */
+    max-width: 120px; /* Ukuran maksimal */
     padding: 15px;
     background: linear-gradient(135deg, #fefaf4, #f3ebe2); /* Bingkai putih klasik */
     border: 2px solid #d9b894; /* Warna coklat emas */
@@ -136,14 +145,14 @@ h1 {
 }
 
 .polaroid img {
-    width: 100%;
+    width: 100%; /* Penuh dalam bingkai */
     height: auto;
     border-radius: 5px;
     margin-bottom: 10px;
 }
 
 .polaroid p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #4b3621;
     margin: 0;
 }
@@ -163,6 +172,7 @@ h1 {
     }
 }
 
+/* Re
 
 /* Warna Balon */
 .brown-light {
@@ -329,5 +339,45 @@ h1 {
     }
     .balloon::before {
         height: 10vw;
+    }
+}
+@media (max-width: 768px) {
+    .paper-container {
+        max-width: 95vw;
+        padding: 5px;
+    }
+
+    .paper {
+        width: 90%;
+        max-width: 350px;
+        padding: 20px;
+    }
+
+    .polaroid {
+        width: 80px;
+        max-width: 100px;
+        padding: 10px;
+    }
+
+    .polaroid-gallery {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .paper {
+        width: 100%;
+        max-width: 300px;
+        padding: 15px;
+    }
+
+    .polaroid {
+        width: 70px;
+        max-width: 90px;
+        padding: 8px;
+    }
+
+    .polaroid-gallery {
+        gap: 10px;
     }
 }
