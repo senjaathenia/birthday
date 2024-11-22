@@ -294,3 +294,40 @@ h1 {
     height: 100%;
     pointer-events: none; /* Tidak mengganggu interaksi dengan elemen lain */
 }
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 6vw;
+    }
+    .cake {
+        width: 40vw;
+        height: 45vw;
+    }
+    .balloon {
+        width: 8vw;
+        height: 12vw;
+    }
+    .balloon::before {
+        height: 8vw;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 7vw;
+    }
+    .cake {
+        width: 50vw;
+        height: 55vw;
+    }
+    .balloon {
+        width: 10vw;
+        height: 15vw;
+    }
+    .balloon::before {
+        height: 10vw;
+    }
+}
